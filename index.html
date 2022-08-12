@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- https://website1447630.nicepage.io/Contact.html?version=46003fa6-a590-4e31-ae32-ffe9f9017976 -->
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Cont<span>a</span>ct</div>
+        <ul>
+            <li><a href="#" data-after="HOME">Home</a></li>
+            <li><a href="#" data-after="SERVICES">Services</a></li>
+            <li><a href="#" data-after="OTHER">Other</a></li>
+            <li><a href="#" data-after="ABOUTUS">AboutUs</a></li>
+        </ul>
+        <div class="hamburger" >
+            <div class="hambar"></div>
+        </div>
+    </nav>
+    <script>
+           const hamburger = document.querySelector('.hamburger');
+        hamburger.addEventListener('click',()=>{
+            hamburger.classList.toggle('active');
+        })
+        const navBar= document.querySelector('nav');
+        hamburger.addEventListener('click',()=>{
+            navBar.classList.toggle('active');
+        })
+
+    </script>
+
+</body>
+
+</html>
