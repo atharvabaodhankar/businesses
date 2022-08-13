@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,900&family=Mouse+Memoirs&family=Neucha&family=Pattaya&family=Poppins:ital,wght@1,900&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     font-family: 'Montserrat', sans-serif;
     padding: 0;
@@ -21,7 +21,7 @@ nav .logo{
     padding: 0 0 0 30px;
 }
 nav .logo span{
-    color: crimson;
+    color: orangered;
 }
 nav ul {
     display: flex;
@@ -77,8 +77,6 @@ nav ul li a:hover:after{
 .hamburger{
     width: 60px;
     height: 60px;
-    border: 3px solid rgb(130, 130, 130);
-    border-radius: 50%;
     margin-right: 30px;
     position: relative;
     display: flex;
@@ -87,7 +85,7 @@ nav ul li a:hover:after{
     cursor: pointer;
     z-index: 100;
 }
-.hamburger::after{
+.hamburger.active::after{
     position: absolute;
     content: '';
     height: 100%;
@@ -136,3 +134,315 @@ nav ul li a:hover:after{
 .hamburger.active .hambar{
    background-color: transparent;
 }
+/* hero */
+#hero{
+    height: 100vh;
+    background-image: url(/pexels-photo-2422278.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_hero{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Montserrat' , 'sans-serif';
+    color: #fff;
+}
+.main_hero h2{
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: 'Montserrat' , 'sans-serif';
+}
+.main_hero h1{
+    font-size: 7.2rem;
+    font-weight: 800;
+    text-align: center;
+    width: 80vw;
+    padding: 20px 0;
+}
+.main_hero h3{
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 0 0 70px 0;
+    text-align: center;
+}
+.hero_buttons a{
+    font-size: 1.3rem;
+    padding: 2rem 4rem;
+    margin: 20px 30px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+.hero_buttons a:first-child{
+    color: #fff;
+    background-color: rgb(0, 251, 142);
+}
+.hero_buttons a:first-child:hover{
+    color: #000;
+    background-color: rgb(223, 223, 16);
+}
+.hero_buttons a:last-child{
+    color: #000;
+    background-color: rgb(223, 223, 16);
+}
+.hero_buttons a:last-child:hover{
+    color: #fff;
+    background-color: rgb(0, 251, 142);
+}
+/* About Us */
+#aboutus{
+    height: fit-content;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus{
+    width: 85vw;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-caret-right{
+    color: rgb(255, 213, 0);
+    font-size: 2.5rem;
+    padding: 10px ;
+}
+.aboutus_text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+.aboutus h3{
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(0, 251, 142);
+    text-align: center;
+}
+.aboutus h1{
+    font-size: 4.5rem;
+    padding: 30px 0;
+    text-align: left;
+}
+.aboutus p{
+    font-size: 1.6rem;
+    text-align: left;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+.aboutus h2{
+    font-size: 1.9rem;
+    font-weight: 300;
+    text-align: center;
+}
+.arrowtext{
+    display: flex;
+    align-items: center;
+}
+.at2{
+   padding-bottom: 50px;
+}
+.aboutus a{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 2rem 4rem;
+    text-align: center;
+    background-color: rgb(0, 251, 142);
+    border-radius: 30px;
+    color: #fff;
+    transition: all .5s ease;
+}
+.aboutus a:hover{
+    background-color:rgb(255, 213, 0) ;
+    color: #000;
+}
+.aboutus_img{
+    width: 50%;
+    height: 110vh;
+    background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/feab4c40117752ce8dba3d32/pexels-photo-389819.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1.5%;
+}
+/* Services */
+#services{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+.services{
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicesbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.textservices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+.textservices h2{
+    font-weight: 400;
+    color: rgb(0, 251, 142);
+    font-size: 2.2rem;
+    text-align: center;
+}
+.textservices h1{
+    font-size: 5rem;
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+.sbox{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+.sbox img{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.sbox h1{
+    font-size: 2.3rem;
+    text-align: center;
+    padding: 20px 0;
+}
+.sbox p{
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 23px;
+}
+.sbox4 h1 , .sbox4 p{
+    color: #fff;
+}
+.sbox1{
+    background-color: rgb(255, 213, 0);
+}
+.sbox4{
+    background-color: rgb(0, 251, 142);
+}
+.sbox3 , .sbox4{
+    margin: 20px 0;
+}
+.readme{
+    font-size: 1.4rem;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 2rem 4rem;
+    text-align: center;
+    background-color:rgb(255, 213, 0) ;
+    border-radius: 30px;
+    color: #000;
+    transition: all .5s ease;
+}
+.readme:hover{
+    background-color: rgb(0, 251, 142);
+    color: #fff;
+}
+@media screen and (max-width:900px) {
+    .main_hero h1{
+        font-size: 4.5rem;
+        width: auto;
+        padding: 20px 10px;
+    }
+    .main_hero h3{
+        font-size: 2rem;
+        padding: 0 20px 40px 20px;
+    }
+    .aboutus h1{
+        font-size: 3.5rem;
+    }
+    .aboutus p{
+        font-size: 1.4rem;
+    }
+    .aboutus{
+        width: 80vw;
+    }
+    .arrowtext h2{
+        font-size: 1.6rem;
+    }
+    .sbox{
+        width: 100%;
+    }
+}
+@media screen and (max-width:750px){
+    .aboutus{
+        flex-direction: column;
+        width: 90vw;
+    }
+    .aboutus_text{
+        width: 80%;
+    }
+    .aboutus_img{
+        width: 80%;
+        height: 80vh;
+    }
+    .textservices{
+        width: 100%;
+    }
+    .textservices h1{
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .hero_buttons{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main_hero h1{
+        font-size: 3.5rem;
+    }
+    .aboutus h1 {
+        font-size: 8vw;
+    }
+    .arrowtext h2{
+        text-align: left;
+    }
+    .aboutus_text{
+        width: 85%;
+        padding: 20px 0;
+    }
+    .aboutus_img{
+        width: 85%;
+        height: 60vh;
+    }
+    .services {
+        width: 80vw;
+    }
+    .textservices h1{
+        font-size: 3rem;
+    }
+}
+
