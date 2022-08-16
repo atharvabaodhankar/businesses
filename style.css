@@ -369,6 +369,152 @@ nav ul li a:hover:after{
     background-color: rgb(0, 251, 142);
     color: #fff;
 }
+/* Sponsers */
+#sponsers{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0;
+    background-color: #293330;
+    color: #fff;
+}
+.sponsers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sponsertext{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 20px;
+}
+.sponsertext h1{
+    font-size: 5rem;
+    text-align: left;
+}
+.sponsertext p{
+    padding: 20px 0 40px 0;
+    font-size: 1.6rem;
+    line-height: 30px;
+    text-align: left;
+}
+.sponsertext a{
+    font-size: 1.4rem;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 2rem 4rem;
+    text-align: center;
+    background-color: rgb(0, 251, 142);
+    color: #fff;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+.sponsertext a:hover{
+    background-color:rgb(255, 213, 0) ;
+    color: #000;
+}
+.sponserimg{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sponserimg img{
+    width: 17vw;
+    margin: 30px 0;
+}
+/* Stats */
+#stats{
+    height: fit-content;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.stats{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 90%;
+}
+.S_aboutus{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 30px 0 0;
+}
+.S_aboutus h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-align: left;
+    color:rgb(0, 251, 142) ;
+    font-weight: 400;
+}
+.S_aboutus h1{
+    font-size: 4vw;
+    font-weight: 700;
+    text-align: left;
+    padding: 20px 0;
+}
+.S_aboutus h2{
+    font-size: 2.4rem;
+    font-weight: 400;
+
+}
+.S_stats{
+    width: 50%;
+}
+.S_stats h5{
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    font-weight: 400;
+    text-align: left;
+}
+.statbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+}
+.stat1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 10px;
+}
+.stat1 h1{
+    font-size: 7.2rem;
+    font-weight: 700;
+    color: rgb(0, 251, 142);
+}
+.stat1 p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+    text-align: center;
+}
+@media screen and (max-width:1000px){
+    .sponserimg img{
+        width: 27vw;
+    }
+    .sponsertext{
+        width: 50vw;
+        padding: 20px;
+    }
+    .stats{
+        width: 80%;
+    }
+}
 @media screen and (max-width:900px) {
     .main_hero h1{
         font-size: 4.5rem;
@@ -394,6 +540,9 @@ nav ul li a:hover:after{
     .sbox{
         width: 100%;
     }
+    .stat1 h1{
+        font-size: 7vw;
+    }
 }
 @media screen and (max-width:750px){
     .aboutus{
@@ -412,6 +561,34 @@ nav ul li a:hover:after{
     }
     .textservices h1{
         font-size: 4rem;
+    }
+    .sponsers{
+        flex-direction: column;
+    }
+    .sponsertext{
+        width: 90vw;
+        margin: 30px 0;
+    }
+    .sponserimg img {
+        width: 35vw;
+    }
+    .stats{
+        flex-direction: column;
+        align-items: center;
+    }
+    .S_aboutus{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .S_aboutus h1{
+        font-size: 5vw;
+    }
+    .S_stats{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .stat1 h1{
+        font-size: 10vw;
     }
 }
 @media screen and (max-width:500px) {
@@ -444,5 +621,29 @@ nav ul li a:hover:after{
     .textservices h1{
         font-size: 3rem;
     }
+    .sponsertext h1 {
+        font-size: 9vw;
+    }
+    .stats{
+        width: 90%;
+    }
+    .statbox{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .stat1{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .S_aboutus h1{
+        font-size: 8vw;
+    }
+    .stat1 h1{
+        font-size: 5rem;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:350px){
+
 }
 
