@@ -1,28 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
+
+* {
     font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
-nav{
+
+nav {
     height: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-nav .logo{
+
+nav .logo {
     font-size: 3rem;
     font-weight: 500;
     padding: 0 0 0 30px;
 }
-nav .logo span{
+
+nav .logo span {
     color: orangered;
 }
+
 nav ul {
     display: flex;
     flex-direction: column;
@@ -37,14 +43,17 @@ nav ul {
     transition: all .5s ease;
     z-index: 100;
 }
-nav.active ul{
+
+nav.active ul {
     left: 0;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin: 20px 0;
 }
-nav ul li a{
+
+nav ul li a {
     font-size: 3rem;
     color: #fff;
     font-family: 'Roboto';
@@ -53,28 +62,32 @@ nav ul li a{
     transition: all .5s ease;
     position: relative;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: cyan;
     letter-spacing: 4px;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     position: absolute;
     content: attr(data-after);
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
     font-size: 12rem;
     transition: all .5s ease;
     letter-spacing: 500px;
     font-weight: 900;
     z-index: -1;
 }
-nav ul li a:hover:after{
-    transform: translate(-50% , -50%) scale(1);
+
+nav ul li a:hover:after {
+    transform: translate(-50%, -50%) scale(1);
     letter-spacing: initial;
     color: rgba(128, 128, 128, 0.725);
 }
-.hamburger{
+
+.hamburger {
     width: 60px;
     height: 60px;
     margin-right: 30px;
@@ -85,22 +98,25 @@ nav ul li a:hover:after{
     cursor: pointer;
     z-index: 100;
 }
-.hamburger.active::after{
+
+.hamburger.active::after {
     position: absolute;
     content: '';
     height: 100%;
     width: 100%;
-    border: 3px  solid rgb(130, 130, 130);
+    border: 3px solid rgb(130, 130, 130);
     border-radius: 50%;
     animation: plus 1s ease infinite;
 }
+
 @keyframes plus {
-    100%{
+    100% {
         opacity: 0;
         transform: scale(1.4);
     }
 }
-.hambar{
+
+.hambar {
     width: 30px;
     height: 3px;
     background-color: #000;
@@ -108,7 +124,8 @@ nav ul li a:hover:after{
     position: relative;
     transition: all .5s ease
 }
-.hambar::after , .hambar::before{
+
+.hambar::after, .hambar::before {
     position: absolute;
     content: '';
     width: 100%;
@@ -117,27 +134,33 @@ nav ul li a:hover:after{
     transition: all .5s ease;
     border-radius: 30px;
 }
-.hambar::after{
+
+.hambar::after {
     top: 10px;
 }
-.hambar::before{
+
+.hambar::before {
     top: -10px;
 }
-.hamburger.active .hambar::after{
+
+.hamburger.active .hambar::after {
     transform: rotate(135deg);
     top: 0;
 }
-.hamburger.active .hambar::before{
+
+.hamburger.active .hambar::before {
     transform: rotate(-135deg);
     top: 0;
 }
-.hamburger.active .hambar{
-   background-color: transparent;
+
+.hamburger.active .hambar {
+    background-color: transparent;
 }
+
 /* hero */
-#hero{
+#hero {
     height: 100vh;
-    background-image: url(/pexels-photo-2422278.jpg);
+    background-image: url(pexels-photo-2422278.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,35 +168,40 @@ nav ul li a:hover:after{
     align-items: center;
     justify-content: center;
 }
-.main_hero{
+
+.main_hero {
     width: fit-content;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Montserrat' , 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     color: #fff;
 }
-.main_hero h2{
+
+.main_hero h2 {
     font-weight: 400;
     font-size: 2rem;
-    font-family: 'Montserrat' , 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
 }
-.main_hero h1{
+
+.main_hero h1 {
     font-size: 7.2rem;
     font-weight: 800;
     text-align: center;
     width: 80vw;
     padding: 20px 0;
 }
-.main_hero h3{
+
+.main_hero h3 {
     font-size: 3.5rem;
     font-weight: 600;
     padding: 0 0 70px 0;
     text-align: center;
 }
-.hero_buttons a{
+
+.hero_buttons a {
     font-size: 1.3rem;
     padding: 2rem 4rem;
     margin: 20px 30px;
@@ -182,24 +210,29 @@ nav ul li a:hover:after{
     font-weight: 600;
     transition: all .5s ease;
 }
-.hero_buttons a:first-child{
+
+.hero_buttons a:first-child {
     color: #fff;
     background-color: rgb(0, 251, 142);
 }
-.hero_buttons a:first-child:hover{
+
+.hero_buttons a:first-child:hover {
     color: #000;
     background-color: rgb(223, 223, 16);
 }
-.hero_buttons a:last-child{
+
+.hero_buttons a:last-child {
     color: #000;
     background-color: rgb(223, 223, 16);
 }
-.hero_buttons a:last-child:hover{
+
+.hero_buttons a:last-child:hover {
     color: #fff;
     background-color: rgb(0, 251, 142);
 }
+
 /* About Us */
-#aboutus{
+#aboutus {
     height: fit-content;
     padding: 70px 0;
     display: flex;
@@ -207,55 +240,65 @@ nav ul li a:hover:after{
     align-items: center;
     justify-content: center;
 }
-.aboutus{
+
+.aboutus {
     width: 85vw;
     height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.fa-caret-right{
+
+.fa-caret-right {
     color: rgb(255, 213, 0);
     font-size: 2.5rem;
-    padding: 10px ;
+    padding: 10px;
 }
-.aboutus_text{
+
+.aboutus_text {
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
 }
-.aboutus h3{
+
+.aboutus h3 {
     font-size: 2rem;
     font-weight: 400;
     color: rgb(0, 251, 142);
     text-align: center;
 }
-.aboutus h1{
+
+.aboutus h1 {
     font-size: 4.5rem;
     padding: 30px 0;
     text-align: left;
 }
-.aboutus p{
+
+.aboutus p {
     font-size: 1.6rem;
     text-align: left;
     padding-bottom: 30px;
     line-height: 30px;
 }
-.aboutus h2{
+
+.aboutus h2 {
     font-size: 1.9rem;
     font-weight: 300;
     text-align: center;
 }
-.arrowtext{
+
+.arrowtext {
     display: flex;
     align-items: center;
 }
-.at2{
-   padding-bottom: 50px;
+
+.at2 {
+    padding-bottom: 50px;
 }
-.aboutus a{
+
+.aboutus a {
     font-size: 1.7rem;
     font-weight: bold;
     padding: 2rem 4rem;
@@ -265,11 +308,13 @@ nav ul li a:hover:after{
     color: #fff;
     transition: all .5s ease;
 }
-.aboutus a:hover{
-    background-color:rgb(255, 213, 0) ;
+
+.aboutus a:hover {
+    background-color: rgb(255, 213, 0);
     color: #000;
 }
-.aboutus_img{
+
+.aboutus_img {
     width: 50%;
     height: 110vh;
     background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/feab4c40117752ce8dba3d32/pexels-photo-389819.jpeg);
@@ -278,8 +323,9 @@ nav ul li a:hover:after{
     background-repeat: no-repeat;
     margin: 1.5%;
 }
+
 /* Services */
-#services{
+#services {
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -287,37 +333,42 @@ nav ul li a:hover:after{
     justify-content: center;
     padding: 60px 0;
 }
-.services{
+
+.services {
     width: 65vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.servicesbox{
+
+.servicesbox {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
-.textservices{
+
+.textservices {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 80%;
 }
-.textservices h2{
+
+.textservices h2 {
     font-weight: 400;
     color: rgb(0, 251, 142);
     font-size: 2.2rem;
     text-align: center;
 }
-.textservices h1{
+
+.textservices h1 {
     font-size: 5rem;
     text-align: center;
     padding: 20px 0 30px 0;
 }
 
-.sbox{
+.sbox {
     width: 50%;
     height: fit-content;
     display: flex;
@@ -326,51 +377,61 @@ nav ul li a:hover:after{
     align-items: center;
     padding: 40px 10px;
 }
-.sbox img{
+
+.sbox img {
     padding: 20px;
     background-color: #fff;
     border-radius: 50%;
 }
-.sbox h1{
+
+.sbox h1 {
     font-size: 2.3rem;
     text-align: center;
     padding: 20px 0;
 }
-.sbox p{
+
+.sbox p {
     font-size: 1.6rem;
     text-align: center;
     line-height: 23px;
 }
-.sbox4 h1 , .sbox4 p{
+
+.sbox4 h1, .sbox4 p {
     color: #fff;
 }
-.sbox1{
+
+.sbox1 {
     background-color: rgb(255, 213, 0);
 }
-.sbox4{
+
+.sbox4 {
     background-color: rgb(0, 251, 142);
 }
-.sbox3 , .sbox4{
+
+.sbox3, .sbox4 {
     margin: 20px 0;
 }
-.readme{
+
+.readme {
     font-size: 1.4rem;
     margin-top: 20px;
     letter-spacing: 3px;
     font-weight: bold;
     padding: 2rem 4rem;
     text-align: center;
-    background-color:rgb(255, 213, 0) ;
+    background-color: rgb(255, 213, 0);
     border-radius: 30px;
     color: #000;
     transition: all .5s ease;
 }
-.readme:hover{
+
+.readme:hover {
     background-color: rgb(0, 251, 142);
     color: #fff;
 }
+
 /* Sponsers */
-#sponsers{
+#sponsers {
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -379,29 +440,34 @@ nav ul li a:hover:after{
     background-color: #293330;
     color: #fff;
 }
-.sponsers{
+
+.sponsers {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sponsertext{
+
+.sponsertext {
     width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin: 0 20px;
 }
-.sponsertext h1{
+
+.sponsertext h1 {
     font-size: 5rem;
     text-align: left;
 }
-.sponsertext p{
+
+.sponsertext p {
     padding: 20px 0 40px 0;
     font-size: 1.6rem;
     line-height: 30px;
     text-align: left;
 }
-.sponsertext a{
+
+.sponsertext a {
     font-size: 1.4rem;
     margin-top: 20px;
     letter-spacing: 3px;
@@ -413,23 +479,27 @@ nav ul li a:hover:after{
     border-radius: 30px;
     transition: all .5s ease;
 }
-.sponsertext a:hover{
-    background-color:rgb(255, 213, 0) ;
+
+.sponsertext a:hover {
+    background-color: rgb(255, 213, 0);
     color: #000;
 }
-.sponserimg{
+
+.sponserimg {
     width: 50vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.sponserimg img{
+
+.sponserimg img {
     width: 17vw;
     margin: 30px 0;
 }
+
 /* Stats */
-#stats{
+#stats {
     height: fit-content;
     padding: 100px 0;
     display: flex;
@@ -437,54 +507,63 @@ nav ul li a:hover:after{
     align-items: center;
     justify-content: center;
 }
-.stats{
+
+.stats {
     display: flex;
     /* align-items: center; */
     justify-content: center;
     width: 90%;
 }
-.S_aboutus{
+
+.S_aboutus {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 30px 0 0;
 }
-.S_aboutus h3{
+
+.S_aboutus h3 {
     font-size: 2rem;
     letter-spacing: 2px;
     text-align: left;
-    color:rgb(0, 251, 142) ;
+    color: rgb(0, 251, 142);
     font-weight: 400;
 }
-.S_aboutus h1{
+
+.S_aboutus h1 {
     font-size: 4vw;
     font-weight: 700;
     text-align: left;
     padding: 20px 0;
 }
-.S_aboutus h2{
+
+.S_aboutus h2 {
     font-size: 2.4rem;
     font-weight: 400;
 
 }
-.S_stats{
+
+.S_stats {
     width: 50%;
 }
-.S_stats h5{
+
+.S_stats h5 {
     font-size: 1.8rem;
     line-height: 2.9rem;
     font-weight: 400;
     text-align: left;
 }
-.statbox{
+
+.statbox {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 100px;
     width: 100%;
 }
-.stat1{
+
+.stat1 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -492,158 +571,1071 @@ nav ul li a:hover:after{
     width: 50%;
     padding: 10px;
 }
-.stat1 h1{
+
+.stat1 h1 {
     font-size: 7.2rem;
     font-weight: 700;
     color: rgb(0, 251, 142);
 }
-.stat1 p{
+
+.stat1 p {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 2.3rem;
     text-align: center;
 }
-@media screen and (max-width:1000px){
-    .sponserimg img{
+
+/* options */
+#options {
+    height: fit-content;
+    padding: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.optionimg {
+    padding: 20px;
+    overflow: hidden;
+    width: 421px;
+    height: 523px;
+    margin-top: 13%;
+    align-self: flex-start;
+}
+
+.optionimg img {
+    width: 100%;
+    height: 100%;
+    object-position: 0% 50%;
+    object-fit: cover;
+}
+
+.optionText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    align-self: flex-start;
+}
+
+.OT {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 10%
+}
+
+.OT h1 {
+    padding-right: 50px;
+    color: rgb(0, 251, 142);
+    font-size: 1.6rem;
+}
+
+/* Plans */
+.fa-check {
+    color: rgb(0, 251, 142);
+}
+
+#plans {
+    height: fit-content;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.textPlans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.tp1 h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tp1 p {
+    font-size: 2.4rem;
+    line-height: 3.9rem;
+    text-align: left;
+    font-weight: 500;
+    padding-top: 20px;
+    color: #1b1b1b;
+}
+
+.tp1 {
+    width: 40vw;
+}
+
+.tp2 {
+    width: 30vw;
+    /* align-self: flex-end; */
+}
+
+.tp2 ul {
+    list-style: none;
+}
+
+.tp2 ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tp2 ul li i {
+    font-size: 17px;
+    padding: 10px;
+}
+
+.tp2 ul li {
+    font-size: 1.7rem;
+}
+
+.planBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin-top: 30px;
+    padding: 50px 0;
+}
+
+.pb {
+    width: 33.3%;
+    height: 441px;
+    margin: 0 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+
+.pb h2 {
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.pb h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    padding: 30px 0;
+}
+
+.pb button {
+    border: 1px solid transparent;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgb(0, 251, 142);
+    padding: 4% 10%;
+    width: fit-content;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pb2h {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pb2h h3 {
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 30px;
+    background-color: rgb(255, 213, 0);
+}
+
+.pb1 .pb2h h3, .pb3 .pb2h h3 {
+    color: transparent;
+    background-color: transparent;
+}
+
+.pb button a {
+    color: rgb(0, 251, 142);
+    font-size: 1.2vw;
+}
+
+.pb button i {
+    padding: 5px 10px;
+    color: #000;
+}
+
+.pb p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.pb1 {
+    background-color: rgb(255, 213, 0);
+    color: #000;
+
+}
+
+.pb2 h2, .pb3 h2 {
+    color: #000;
+}
+
+.pb2 h1, .pb3 h1 {
+    color: rgb(255, 213, 0);
+}
+
+.pb2 h1 span, .pb3 h1 span {
+    font-size: 2rem;
+}
+
+.pb2 button a, .pb3 button a {
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.pb2 button a:hover, .pb3 button a:hover {
+    color: #000;
+}
+
+.pb2 button, .pb3 button {
+    background-color: rgb(0, 251, 142);
+    transition: all .5s ease;
+}
+
+.pb2 button:hover, .pb3 button:hover {
+    background-color: rgb(255, 213, 0);
+}
+
+.pb1 button:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+/* Review */
+#review {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.reviewText {
+    font-size: 4.8rem;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.reviewBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    margin: 30px 0;
+}
+
+.rbox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin: 0 20px;
+    border-radius: 30px;
+}
+
+.rbox i {
+    font-size: 4rem;
+    color: rgb(0, 251, 142);
+    padding: 10px;
+}
+
+.rbox p {
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 90%;
+    line-height: 25px;
+}
+
+.rboximg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rboximg .rbimg {
+    background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/12152ec538fe53638c15cc2d/pexels-photo-4621785.jpeg?version=);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.rboximg .rbimg2 {
+    background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/af5743e150375e8fad2c6f8a/pexels-photo-6000710.jpeg?version=);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.rbtext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.rbtext h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.rbtext h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.reviewmore {
+    margin: 20px 0;
+}
+
+.reviewmore h2 {
+    padding: 1.6rem 5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: rgb(0, 251, 142);
+    color: #fff;
+    transition: all .5s ease;
+    border-radius: 30px;
+}
+
+.reviewmore h2:hover {
+    color: #fff;
+    background-color: rgb(255, 213, 0);
+}
+
+/* Advice */
+#advice {
+    height: fit-content;
+    padding: 100px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #293330;
+}
+
+.advice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formtext {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formtext h1 {
+    font-size: 4.8rem;
+    color: #fff;
+}
+
+.formtext p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: rgb(189, 189, 189);
+    padding: 20px 0;
+}
+
+.forminput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.input1 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input1 input {
+    width: 35rem;
+    height: 4.5rem;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    padding: 10px;
+    margin: 10px;
+}
+
+.lastinput {
+    padding: 1.5rem 3rem;
+    color: #fff;
+    background-color: rgb(0, 251, 142);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 1.7rem;
+    margin: 20px;
+}
+
+.input1 input::placeholder {
+    font-size: 1.6rem;
+    padding-left: 10px;
+    color: rgb(111, 111, 111);
+}
+
+/* ContactUs */
+#contact {
+    height: fit-content;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactus {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactustext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 40%;
+    align-self: flex-start;
+}
+
+.contactustext h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.contactustext p {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: center;
+    text-align: left;
+}
+
+.contactustext h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.contactustext h3 span {
+    color: rgb(255, 213, 0);
+    font-weight: 700;
+}
+
+.signup {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f2f2f2;
+    width: 60%;
+}
+
+.signup h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+.signup p {
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 20px 0;
+    line-height: 30px;
+}
+
+.signupinput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.signupinput input {
+    height: 100%;
+    width: 400px;
+    border: none;
+}
+
+.signupinput input::placeholder {
+    padding-left: 10px;
+}
+
+.signupinput a {
+    font-size: 1.8rem;
+    color: #fff;
+    background-color: rgb(0, 251, 142);
+    padding: 2rem;
+    width: 113px;
+    font-weight: 600;
+    transition: all .2s ease;
+}
+
+.signupinput a:hover {
+    background-color: rgb(0, 195, 111);
+}
+
+.signupicons i {
+    font-size: 2.7rem;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+/* Footer */
+footer{
+    height: fit-content;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(62, 62, 62);
+    color: #fff;
+    font-size: 1.4rem;
+}
+footer p {
+    width: 40%;
+    text-align: center;
+}
+footer h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: center;
+}
+footer h3 a{
+    text-decoration: underline;
+    color: orangered;
+    cursor: pointer;
+}
+@media screen and (max-width:1075px) {
+    .input1 input {
+        width: 25rem;
+    }
+
+    .signupinput input {
+        width: 300px;
+    }
+
+    .signup h1, .contactustext h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .sponserimg img {
         width: 27vw;
     }
-    .sponsertext{
+
+    .sponsertext {
         width: 50vw;
         padding: 20px;
     }
-    .stats{
+
+    .stats {
         width: 80%;
     }
+
+    .options {
+        width: 90vw;
+    }
+
+    .tp1 p {
+        font-size: 2rem;
+    }
+
+    .rboximg {
+        flex-direction: column;
+    }
+
+    .rbimg {
+        align-self: flex-start;
+        margin: 20px 0 !important;
+    }
 }
+
 @media screen and (max-width:900px) {
-    .main_hero h1{
+    .main_hero h1 {
         font-size: 4.5rem;
         width: auto;
         padding: 20px 10px;
     }
-    .main_hero h3{
+
+    .main_hero h3 {
         font-size: 2rem;
         padding: 0 20px 40px 20px;
     }
-    .aboutus h1{
+
+    .aboutus h1 {
         font-size: 3.5rem;
     }
-    .aboutus p{
+
+    .aboutus p {
         font-size: 1.4rem;
     }
-    .aboutus{
+
+    .aboutus {
         width: 80vw;
     }
-    .arrowtext h2{
+
+    .arrowtext h2 {
         font-size: 1.6rem;
     }
-    .sbox{
+
+    .sbox {
         width: 100%;
     }
-    .stat1 h1{
+
+    .stat1 h1 {
         font-size: 7vw;
     }
+
+    .optionimg {
+        width: 300px;
+        height: 373px;
+    }
+
+    .options {
+        justify-content: center;
+    }
+
+    .optionimg {
+        margin-top: 0;
+    }
+
+    .optionText .OT img {
+        width: 40px;
+    }
+
+    .pb button a {
+        font-size: 1.5vw;
+    }
+
+    .planBox {
+        flex-direction: column;
+    }
+
+    .pb {
+        width: 60%;
+        margin: 20px 0;
+    }
+
+    .reviewBox {
+        flex-direction: column;
+    }
+
+    .rbox {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .reviewText {
+        font-size: 3.8rem;
+        width: 70%;
+    }
+
+    .input1 input {
+        width: 20rem;
+    }
+
+    .input1 input::placeholder {
+        font-size: 1.3rem;
+    }
+
+    .signup h1, .contactustext h1 {
+        font-size: 3.6rem;
+    }
+
+    .contactustext h3 {
+        font-size: 2.4rem;
+    }
+
+    .signup {
+        width: 65%;
+    }
 }
-@media screen and (max-width:750px){
-    .aboutus{
+
+@media screen and (max-width:750px) {
+    .aboutus {
         flex-direction: column;
         width: 90vw;
     }
-    .aboutus_text{
+
+    .aboutus_text {
         width: 80%;
     }
-    .aboutus_img{
+
+    .aboutus_img {
         width: 80%;
         height: 80vh;
     }
-    .textservices{
+
+    .textservices {
         width: 100%;
     }
-    .textservices h1{
+
+    .textservices h1 {
         font-size: 4rem;
     }
-    .sponsers{
+
+    .sponsers {
         flex-direction: column;
     }
-    .sponsertext{
+
+    .sponsertext {
         width: 90vw;
         margin: 30px 0;
     }
+
     .sponserimg img {
         width: 35vw;
     }
-    .stats{
+
+    .stats {
         flex-direction: column;
         align-items: center;
     }
-    .S_aboutus{
+
+    .S_aboutus {
         width: 100%;
         margin: 30px 0;
     }
-    .S_aboutus h1{
+
+    .S_aboutus h1 {
         font-size: 5vw;
     }
-    .S_stats{
+
+    .S_stats {
         margin-top: 40px;
         width: 100%;
     }
-    .stat1 h1{
+
+    .stat1 h1 {
         font-size: 10vw;
     }
+
+    .options {
+        flex-direction: column;
+    }
+
+    .optionText {
+        width: 100%;
+    }
+
+    .optionimg {
+        align-self: center;
+        margin: 20px;
+    }
+
+    .textPlans {
+        flex-direction: column;
+    }
+
+    .tp1 {
+        width: 90%;
+    }
+
+    .tp1 p {
+        padding-bottom: 30px;
+    }
+
+    .tp2 {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .tp2 ul li {
+        justify-content: flex-start;
+    }
+
+    .pb button a {
+        font-size: 1.7rem;
+    }
+
+    .rbox p {
+        width: 100%;
+    }
+
+    .forminput {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .input1 {
+        width: 100%;
+    }
+
+    .input1 input {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .lastinput {
+        width: 50%;
+        min-width: 5rem;
+    }
+
+    .formtext {
+        width: 80%;
+    }
+
+    .formtext h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .contactus {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contactustext {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .signup {
+        width: 90%;
+    }
+
+    .signup p {
+        width: 90%;
+        line-height: 30px;
+    }
+    footer p{
+        width: 80%;
+    }
 }
+
 @media screen and (max-width:500px) {
-    .hero_buttons{
+    .hero_buttons {
         flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .main_hero h1{
+
+    .main_hero h1 {
         font-size: 3.5rem;
     }
+
     .aboutus h1 {
         font-size: 8vw;
     }
-    .arrowtext h2{
+
+    .arrowtext h2 {
         text-align: left;
     }
-    .aboutus_text{
+
+    .aboutus_text {
         width: 85%;
         padding: 20px 0;
     }
-    .aboutus_img{
+
+    .aboutus_img {
         width: 85%;
         height: 60vh;
     }
+
     .services {
         width: 80vw;
     }
-    .textservices h1{
+
+    .textservices h1 {
         font-size: 3rem;
     }
+
     .sponsertext h1 {
         font-size: 9vw;
     }
-    .stats{
+
+    .stats {
         width: 90%;
     }
-    .statbox{
+
+    .statbox {
         flex-direction: column;
         margin-top: 20px;
     }
-    .stat1{
+
+    .stat1 {
         width: 100%;
         margin: 20px 0;
     }
-    .S_aboutus h1{
+
+    .S_aboutus h1 {
         font-size: 8vw;
     }
-    .stat1 h1{
+
+    .stat1 h1 {
         font-size: 5rem;
         padding-bottom: 20px;
     }
-}
-@media screen and (max-width:350px){
 
+    .OT h1 {
+        padding-right: 20px;
+    }
+
+    .tp1 h1 {
+        font-size: 3.2rem;
+    }
+
+    .tp1 p {
+        font-size: 1.8rem;
+    }
+
+    .pb {
+        width: 90%;
+    }
+
+    .pb button a {
+        font-size: 4vw;
+    }
+
+    .reviewText {
+        font-size: 9vw;
+        width: 70%;
+    }
+
+    .formtext h1 {
+        font-size: 3rem;
+    }
+
+    .signup h1, .contactustext h1 {
+        font-size: 2.6rem;
+    }
+
+    .signupinput input {
+        width: 200px;
+    }
+
+    .contactustext p {
+        font-size: 1.7rem;
+    }
+
+    .contactustext h3 {
+        font-size: 2rem;
+    }
+
+    .signup {
+        width: 100%;
+    }
 }
 
+@media screen and (max-width:400px) {
+    .signupinput input {
+        width: 140px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .OT h1 {
+        padding-right: 0px;
+        font-size: 1.4rem;
+    }
+
+    .optionimg {
+        height: 74vh;
+        width: 100vw;
+    }
+
+    .optionimg img {
+        object-position: 10% 50%;
+    }
+
+    .OT {
+        margin-top: 30px;
+    }
+
+    .OT h1 {
+        padding-right: 20px;
+    }
+
+    .optionText .OT img {
+        width: 30px;
+    }
+
+    .reviewText {
+        width: 90%;
+        font-size: 10vw;
+    }
+
+    .signupinput {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 20px 0;
+        width: 100%;
+    }
+    .signupinput a {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .signupinput input {
+        width: 100%;
+        height: 45px;
+        margin: 10px 0;
+    }
+}
